@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XO Game vs Computer</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container game-container text-center my-5 p-4 shadow-lg rounded">
+    <h1 class="title mb-4">Tic-Tac-Toe (Player vs Computer)</h1>
+    
+    <!-- Intro Section (Visible when the game hasn't started yet) -->
+    <div id="intro" class="intro">
+      <p class="intro-text">Hello User! Please choose a difficulty level:</p>
+      <div class="form-group">
+        <label for="difficulty" class="difficulty-label font-weight-bold">Choose Difficulty:</label>
+        <select id="difficulty" class="form-control mx-auto" style="max-width: 200px;">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+      <button id="startButton" class="btn btn-primary mt-4">Start Game</button>
+    </div>
+
+    <!-- Game Section (Initially hidden, shown when game starts) -->
+    <div id="gameSection" class="d-none">
+      <div id="board" class="board mx-auto mt-4"></div>
+      <button id="restartButton" class="btn btn-primary mt-4">Restart Game</button>
+      <p id="message" class="message mt-3"></p>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="text-center mt-5 py-3 bg-light">
+    <p class="mb-0">© 2024 Website made by <strong>Ahmed Saad</strong></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
